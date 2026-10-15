@@ -8,4 +8,3 @@ while True:
         break
     else:
         print(f"Amé visitar la ciudad de {city.title()}.")
-
