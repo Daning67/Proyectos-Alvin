@@ -8,7 +8,7 @@ desc_3 = 0.15 #Compras a partir de 10 cuadernos
 descuento_venta = 0
 costo_r = 0.00 #Costo de envio para retiro en tienda (R)
 costo_e = 2.00 #Total < 30
-Subtotal_P_Desc = 30.00
+Subtotal_P_Desc = 35.00
 puedo_calcular = True
 
 ## Declaración de INPUTS
@@ -41,11 +41,11 @@ if puedo_calcular:
         else:
             costo_entrega = costo_e
     print(f"La cantidad de cuadernos es: {cuadernos}")
-    print(f"Subtotal es: ${subtotal}")
-    print(f"Descuento en dolares ($): ${descuento_dolares}")
-    print(f"Valor con descuento ${descuento_dolares}")
-    print(f"Costo de envío ${costo_entrega}")
-    print(f"Total a pagar: ${valor_con_descuento + costo_entrega":,.2f)
+    print(f"Subtotal es: ${subtotal:,.2f}")
+    print(f"Descuento en dolares ($): ${descuento_dolares:,.2f}")
+    print(f"Valor con descuento ${subtotal - descuento_dolares:,.2f}")
+    print(f"Costo de envío ${costo_entrega:,.2f}")
+    print(f"Total a pagar: ${valor_con_descuento + costo_entrega:,.2f}")
 else:
     print("No es posible calcular.")
     
